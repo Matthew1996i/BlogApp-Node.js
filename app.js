@@ -16,6 +16,7 @@
             secret: 'cursodenode',
             resave: true,
             saveUninitialized: true
+            
         }))
         app.use(flash())
     // Middleware
