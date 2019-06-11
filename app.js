@@ -13,6 +13,9 @@
     const Postagem = mongoose.model('postagens')
     require('./models/Categoria')
     const Categoria = mongoose.model('categorias')
+    const usuarios = require('./routes/usuario')
+
+
 // Configurações
     // Sessão
         app.use(session({
@@ -98,6 +101,7 @@
         res.send('Lista de Posts: ')
     })
     app.use('/admin', admin)
+    app.use('/usuarios', usuarios)
 // Conexão
 
 const PORT = 8081
